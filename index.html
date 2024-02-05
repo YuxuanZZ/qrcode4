@@ -3,10 +3,26 @@
 
 <head>
   <title>My Image Page</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    img {
+      width: 80%; /* 设置图片宽度为页面宽度的80% */
+      height: auto; /* 根据宽度等比例缩放高度 */
+      display: block; /* 去掉图片下方空隙 */
+      margin: 0 auto; /* 水平居中 */
+    }
+  </style>
 </head>
 
 <body>
-  <img src="https://github.com/YuxuanZZ/qrcode2/raw/320cb8c29642a3d1020527b0ea14f3ca838438ab/IMG_1179.jpeg" alt="QRcode" style="width: 500px; height: auto;">
+  <img src="https://github.com/YuxuanZZ/qrcode2/raw/320cb8c29642a3d1020527b0ea14f3ca838438ab/IMG_1179.jpeg" alt="QRcode">
 </body>
 
 </html>
