@@ -5,20 +5,18 @@
   <title>My Image Page</title>
   <style>
     body {
-      margin: 0;
-      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
+      height: 100vh;
+      margin: 0;
     }
 
     img {
-      width: 100vw; /* 设置图片宽度为视窗宽度 */
-      height: 100vh; /* 设置图片高度为视窗高度 */
-      object-fit: cover; /* 保持图片比例，填充整个容器 */
-      object-position: center center; /* 图片居中显示 */
-      display: block;
+      width: 60%; /* 设置图片宽度为页面宽度的80% */
+      height: auto; /* 根据宽度等比例缩放高度 */
+      display: block; /* 去掉图片下方空隙 */
+      margin: 0 auto; /* 水平居中 */
     }
   </style>
 </head>
@@ -28,3 +26,4 @@
 </body>
 
 </html>
+
