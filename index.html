@@ -10,13 +10,14 @@
       align-items: center;
       height: 100vh;
       margin: 0;
+      overflow: hidden; /* 隐藏溢出部分 */
     }
 
     img {
-      width: 80%; /* 设置图片宽度为页面宽度的80% */
+      max-width: 100%; /* 设置图片最大宽度为100% */
+      max-height: 100%; /* 设置图片最大高度为100% */
       height: auto; /* 根据宽度等比例缩放高度 */
-      display: block; /* 去掉图片下方空隙 */
-      margin: 0 auto; /* 水平居中 */
+      display: block;
     }
   </style>
 </head>
