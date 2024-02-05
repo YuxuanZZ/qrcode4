@@ -5,18 +5,19 @@
   <title>My Image Page</title>
   <style>
     body {
+      margin: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      overflow: hidden; /* 隐藏溢出部分 */
+      overflow: hidden;
     }
 
     img {
-      max-width: 100%; /* 设置图片最大宽度为100% */
-      max-height: 100%; /* 设置图片最大高度为100% */
-      height: auto; /* 根据宽度等比例缩放高度 */
+      width: 100vw; /* 设置图片宽度为视窗宽度 */
+      height: 100vh; /* 设置图片高度为视窗高度 */
+      object-fit: cover; /* 保持图片比例，填充整个容器 */
+      object-position: center center; /* 图片居中显示 */
       display: block;
     }
   </style>
